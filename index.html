@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi rimera web</title>
+    <style>
+        table th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!--(style="border: 1px solid black;") puede ir dentro de table pero se pondra separado-->
+    <table >
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Anillo</td>
+                <td>50$</td>
+            </tr>
+            <tr>
+                <td>Collar gatito</td>
+                <td>100$</td>
+            </tr>
+        </tbody>
+<!--thead y tbody se usa para que algunos exploradores coloquen un escrol entre celdas-->
+        <tfoot>
+            <td></td>
+            <td>total: 150$</td>
+        </tfoot>
+    </table>
+
+
+
+
+
+
+    <!-- ul es lista no ordenada-->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+        <!-- ol es lista ordenada-->
+    <ol>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ol>
+    <!-- value se usa para indicar el valorque quiero usar desde el inicio-->
+    <ol>
+        <li value="30">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    <!-- anidar listas-->
+        <li>
+            <ol>
+                <li style="list-style-type:lower-alpha">Sub elemento 1</li>
+                <li style="list-style-type:lower-alpha">Sub elemento 2</li>
+                <li style="list-style-type:lower-alpha">Sub elemento 3</li>
+                <li style="list-style-type:lower-alpha">Sub elemento 4</li>
+            </ol>
+        </li>
+    </ol>
+    
+
+    <from action="/formulario" method="POST">
+<!--GET,POST no me sali correctamente verificar en una segunda prueba-->
+        <label for="nombre">Nombre </label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre" />
+<!--En type puede ser (email,submit,password,radio,checkbox,file)input por defecto se pone en type "text"-->
+        <br>
+        <label for="apellido">Apellido</label>
+        <input value="rosas" type="text" id="apellido" name="nombre" placeholder="Apellido" />
+<!-- En input "value" genera algo por defecto por defecto -->
+        <br>
+        <label for="comentario">comentario</label>
+        <br>
+        <textarea cols="30" rows="10" id="comentario" placeholder="Ingrese comentario" name="comentario">para hacer el mismo efecto que value en input
+            la oracion o palabra tiene que ir dentro de la apertura y cierre del textarea
+        </textarea>
+        <br>
+        <!--<input type="submit" /> usaremos otro para emviar porque en un input con type submit no se pueden agregar etiquetas-->
+        <button type="button" >boton de tipo button</button><!--esto necesita JS para saber que hacer-->
+        <button type="reset">boton de tipo reset</button>
+        <button type="submit">boton de tipo submit</button>
+<!--button puede tener type los cuales son (button,submit,reset)-->
+<!--No me funciona ningun boton :,c  despues revisar el codigo-->
+    </from>
+    </from>
+    <h1>Mi primera pagina men c:</h1>
+    <h2>Ya puedo subir el hentai</h2>
+    <h3>O tu que me recomiendas subir ?</h3>
+    <h4>Solo le falta colorsito</h4>
+    <h5>Sabias que tu eres gey :3</h5>
+    <hr>
+    <p>Chanchito feliz uwu</p>
+    <p>Chanchito tite :c</p>
+    <h4>
+        Esto es un texto <span style="color:blue">mucho mas largo</span> 
+        <br>localizaremos algo aqui tambien estamos haciendo<br>
+        un salto de linea
+    </h4>
+    <img src="imagenes/gato.png" width="300" height="200" />
+    <br>
+    <a target="_blank" href="https://www.youtube.com/watch?v=wJwaaShhY7U">sonido de prueba</a>
+    <!--Esto es un comentario que no aparecera -->
+</body>
+</html>
